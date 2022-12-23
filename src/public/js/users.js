@@ -45,6 +45,7 @@ function apiSaveUser(user) {
     .then((response) => response.json())
     .then((data) => {
         console.log('Success:', data);
+        getAllUsers();
     })
     .catch((error) => {
         console.error('Error:', error);
