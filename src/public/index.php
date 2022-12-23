@@ -4,7 +4,7 @@ require __DIR__ . '/../../vendor/autoload.php';
 
 $router = new \alexshent\webapp\core\Router('alexshent\\webapp\\application\\controllers\\');
 
-$router->add('/', ['controller' => 'Main', 'action' => 'index']);
+$router->add('/', ['controller' => 'Main', 'action' => 'users']);
 $router->add('/{controller}', ['action' => 'index']);
 $router->add('/{controller}/{action}');
 
